@@ -1,0 +1,8 @@
+<div *ngIf="showheros"[ngStyle]="{'background-color':clrnm}">
+<ul>
+  <li *ngFor="let hero of herosvc.getHeros()">
+    {{hero.name}}uses{{hero.weapon}}
+
+  </li>
+</ul>
+</div>
