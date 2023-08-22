@@ -6,3 +6,25 @@
   </li>
 </ul>
 </div>
+<br>
+<br>
+<div [ngSwitch]="color">
+  <div *ngSwitchCase="'red'">You picked red color</div>
+  <div *ngSwitchCase="'blue'">You picked blue color</div>
+  <div *ngSwitchCase="'green'">You picked green color</div>
+</div>
+<br>
+<br>
+<div class="content">
+  <button [ngStyle]="{'font-size.px':20, 'font-style':'italic', 'color':'red'}">ngStyle Option1</button>
+  <br>
+  <br>
+  <button [ngStyle]="AddStyle()">ngStyle Option2</button>
+</div>
+<br>
+<br>
+<button [ngClass]="['btn-bold', 'btn-italic', 'btn-red']">ngClass Array</button>
+<button [ngClass]="{'btn-bold':true,'btn-italic':false,'btn-red':false}">ngClass Object</button>
+<button [ngClass]="AddClass()">ngClass Function</button>
+
+

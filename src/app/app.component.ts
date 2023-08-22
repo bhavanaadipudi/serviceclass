@@ -10,6 +10,24 @@ export class AppComponent {
   
   showheros = true;
   clrnm='yellow';
+  public color = "blue";
+  AddStyle()
+    {
+        return{
+          'font-size.px':25, 
+          'font-style':'italic', 
+          'color':'blue'
+        }
+    }
+    AddClass()
+    {
+      return{
+        'btn-bold':true,
+        'btn-italic':true,
+        'btn-green':true
+      }
+    }
+  
 
   constructor(public herosvc:MystringService){    //DI
           
